@@ -1,0 +1,17 @@
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\Vue.BussinessLayer.dll.config
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\Vue.BussinessLayer.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\Vue.BussinessLayer.pdb
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\Vue.Core.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\Vue.DataLayer.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\Vue.Core.pdb
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\Vue.DataLayer.pdb
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\Vue.DataLayer.dll.config
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\obj\Debug\Vue.BussinessLayer.csprojAssemblyReference.cache
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\obj\Debug\Vue.BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\obj\Debug\Vue.BussinessLayer.csproj.CopyComplete
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\obj\Debug\Vue.BussinessLayer.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.BussinessLayer\obj\Debug\Vue.BussinessLayer.pdb

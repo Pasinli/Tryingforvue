@@ -1,0 +1,16 @@
+﻿@model Vue.DataLayer.Category
+@{
+    ViewBag.Title = "AddCategory";
+}
+
+@using (Html.BeginForm("AddCategory", "Crud", FormMethod.Post))
+{
+
+    @Html.TextBoxFor(x => x.CategoryName, new { @placeholder = "Kategori ismi" })
+
+    @Html.TextBoxFor(x => x.Description, new { @placeholder = "Kategori Açıklaması" })
+
+    
+    <button type="submit" class="glyphicon-sort-by-attributes">Kaydet</button>
+
+}

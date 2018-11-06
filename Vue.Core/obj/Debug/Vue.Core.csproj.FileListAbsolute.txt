@@ -1,0 +1,6 @@
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.Core\bin\Debug\Vue.Core.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.Core\bin\Debug\Vue.Core.pdb
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.Core\obj\Debug\Vue.Core.csprojAssemblyReference.cache
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.Core\obj\Debug\Vue.Core.csproj.CoreCompileInputs.cache
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.Core\obj\Debug\Vue.Core.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.Core\obj\Debug\Vue.Core.pdb

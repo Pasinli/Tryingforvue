@@ -1,0 +1,16 @@
+﻿@model Vue.DataLayer.Category
+@{
+    ViewBag.Title = "UpdateCategory";
+}
+
+<h2>UpdateCategory</h2>
+
+@using (Html.BeginForm("UpdateCategory","Crud",FormMethod.Post))
+{
+    @Html.TextBoxFor(x => x.CategoryName)
+
+    @Html.TextBoxFor(x => x.Description)
+
+    <button type="submit" name="Kaydet">Kaydet</button>
+}
+

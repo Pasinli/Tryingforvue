@@ -1,0 +1,122 @@
+﻿
+@section purecss{
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+}
+<div id="app">
+    <table class="pure-table pure-table-bordered">
+
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    ProductName
+                </th>
+                <th>
+                    UnitPrice
+                </th>
+
+                <th>
+                    QuantityPerUnit
+                </th>
+                <th>
+                    Stock
+                </th>
+                <th>
+                    CategoryName
+
+                </th>
+                <th>
+                    Stok Düşür
+
+                </th>
+
+                <th>
+                    Stok Arttır
+                </th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr v-for="data in info" v-bind:id="data.Id" v-if="data.Stock>0">
+                <td>{{data.Id}}</td>
+                <td>{{data.ProductName}}</td>
+                <td>{{data.UnitPrice}}</td>
+                <td>{{data.QuantityPerUnit}}</td>
+                <td>{{data.Stock}}</td>
+                <td>{{data.CategoryName}}</td>
+                <td>
+                    <a v-on:click="decrease(data.Id)">Stok Düşür</a>
+                </td>
+                <td>
+                    <a v-on:click='increase(data.Id)'>Stok Arttır</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+@section vuejs{
+
+
+    <script src="~/Scripts/vue.js"></script>
+    
+    <script src="~/Scripts/axios.js"></script>
+ 
+
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    info: null,
+                    id: null,
+                    page: 10
+                }
+            },
+
+            methods: {
+                increase: function (id) {
+                    axios.post('http://localhost:65302/Crud/Increase/' + id + '')
+
+                },
+                decrease: function (id) {
+                    axios.post('http://localhost:65302/Crud/decrease/' + id + '')
+                },
+                CheckStock: function (stock) {
+                    if (stock < 1 || stock == 0) {
+                        console.log(stock)
+                    }
+                },
+                clickCallback: function (pageNum) {
+                    console.log(pageNum)
+                },
+                callback: function (page) {
+                    console.log(`Page ${page} was selected. Do something about it`);
+                }
+
+
+            },
+            mounted() {
+                axios
+                    .get('http://localhost:65302/Crud/GetAllProducts')
+                    .then(response => (this.info = response.data, this.id = response.data.Id))
+            },
+            updated() {
+                axios
+                    .get('http://localhost:65302/Crud/GetAllProducts')
+                    .then(response => (this.info = response.data, this.id = response.data.Id))
+            }
+
+        })
+    </script>
+
+
+}

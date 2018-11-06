@@ -1,0 +1,91 @@
+﻿
+@section purecss{
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+}
+<div id="app">
+    <table class="pure-table pure-table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    CategoryName
+                </th>
+                <th>
+                    Desc
+                </th>
+                <th>
+                    Güncelle
+                </th>
+                <th>
+                    Yeni Ekle
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr v-for="data in info" v-bind:id="data.Id">
+                <td>{{data.CategoryId}}</td>
+                <td>{{data.CategoryName}}</td>
+                <td>{{data.Desc}}</td>
+                <td>
+                    <a v-on:click="update(data.CategoryId)">Güncelle</a>
+                </td>
+                <td>
+                    <a v-on:click='Add()'>Yeni Ekle</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+@section vueCatjs{
+
+
+    <script src="~/Scripts/vue.js"></script>
+
+    <script src="~/Scripts/axios.js"></script>
+
+
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    info: null,
+                    id: null,
+                    page: 10
+                }
+            },
+
+            methods: {
+                update: function (id) {
+                    axios.post('http://localhost:65302/Crud/UpdateCategory/' + id)
+                    window.location.href = "http://localhost:65302/Crud/UpdateCategory/" + id
+
+                },
+                Add: function (id) {
+                    window.location.href = "http://localhost:65302/Crud/AddCategory/"
+
+                },
+  
+            },
+            mounted() {
+                axios
+                    .get('http://localhost:65302/Crud/GetAllCategories')
+                    .then(response => (this.info = response.data, this.id = response.data.Id))
+            },
+            updated() {
+                axios
+                    .get('http://localhost:65302/Crud/GetAllCategories')
+                    .then(response => (this.info = response.data, this.id = response.data.Id))
+            }
+
+        })
+    </script>
+
+
+}

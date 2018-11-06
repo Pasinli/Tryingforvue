@@ -1,0 +1,14 @@
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\Vue.DataLayer.dll.config
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\Vue.DataLayer.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\Vue.DataLayer.pdb
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\Vue.Core.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\Vue.Core.pdb
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\obj\Debug\Vue.DataLayer.csprojAssemblyReference.cache
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\obj\Debug\Vue.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\obj\Debug\Vue.DataLayer.csproj.CopyComplete
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\obj\Debug\Vue.DataLayer.dll
+C:\Users\Hakan\source\repos\Tryingforvue\Vue.DataLayer\obj\Debug\Vue.DataLayer.pdb
